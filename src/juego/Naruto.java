@@ -6,14 +6,14 @@ import java.awt.event.KeyEvent;
 import java.awt.geom.Area;
 import java.awt.geom.Ellipse2D;
 
-public class Insecto {
+public class Naruto {
     public static int x= 10, y =10;
     public void paint(Graphics g){
-        ImageIcon hoyo = new ImageIcon(getClass().getResource("../images/hoyo.png"));
-        g.drawImage(hoyo.getImage(),500,500,150,150,null);
+        ImageIcon portal = new ImageIcon(getClass().getResource("../images/portal.png"));
+        g.drawImage(portal.getImage(),500,500,150,150,null);
 
-        ImageIcon arana = new ImageIcon(getClass().getResource("../images/araña.png"));
-        g.drawImage(arana.getImage(),x,y, 100, 100, null);
+        ImageIcon naruto = new ImageIcon(getClass().getResource("../images/naruto.png"));
+        g.drawImage(naruto.getImage(),x,y, 100, 100, null);
     }
 
     public void keyPressed(KeyEvent e){

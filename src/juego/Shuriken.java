@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.geom.Area;
 import java.awt.geom.Ellipse2D;
 
-public class Piedras {
+public class Shuriken {
     public static int xRoca1=600,yRoca1=700;
     public static int xRoca2=700,yRoca2=100;
     public static int xRoca3=20,yRoca3=600;
@@ -23,23 +23,23 @@ public class Piedras {
     int finX=700;
     int finY=700;
 
-    public Piedras(Juego j2){
+    public Shuriken(Juego j2){
         this.j=j2;
     }
 
     public void paint(Graphics g){
-        ImageIcon piedra = new ImageIcon(getClass().getResource("../images/piedra.png"));
+        ImageIcon shuriken = new ImageIcon(getClass().getResource("../images/shuriken.png"));
         if (nivel>=1){
-            g.drawImage(piedra.getImage(),xRoca1,yRoca1,48,48,null);
+            g.drawImage(shuriken.getImage(),xRoca1,yRoca1,48,48,null);
         }
         if (nivel>=2){
-            g.drawImage(piedra.getImage(),xRoca2,yRoca2,48,48,null);
+            g.drawImage(shuriken.getImage(),xRoca2,yRoca2,48,48,null);
         }
         if (nivel>=3){
-            g.drawImage(piedra.getImage(),xRoca3,yRoca3,48,48,null);
+            g.drawImage(shuriken.getImage(),xRoca3,yRoca3,48,48,null);
         }
         if (nivel>=4){
-            g.drawImage(piedra.getImage(),xRoca4,yRoca4,48,48,null);
+            g.drawImage(shuriken.getImage(),xRoca4,yRoca4,48,48,null);
         }
     }
     public boolean choque(){
@@ -57,8 +57,8 @@ public class Piedras {
 
         if(j.bicho.llegaFinal()){
             nivel++;
-            Insecto.x=10;
-            Insecto.y=10;
+            Naruto.x=10;
+            Naruto.y=10;
         }
 
         if(nivel>=1){

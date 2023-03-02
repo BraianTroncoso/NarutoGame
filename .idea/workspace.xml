@@ -4,20 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51f5fcd0-cd5e-44a1-b4e2-45d9d8565df2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spider.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/araña.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/hoyo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/piedra.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/tela.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/juego/Insecto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/juego/Juego.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/juego/Piedras.java" afterDir="false" />
+    <list default="true" id="51f5fcd0-cd5e-44a1-b4e2-45d9d8565df2" name="Changes" comment="[ADD] Archivos terminados de Spider-Game">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/aldea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icon1.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/naruto.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/portal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/shuriken.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/juego/IconoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/araña.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/hoyo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/piedra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/tela.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/juego/Insecto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/juego/Naruto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/juego/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/juego/Juego.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/juego/Piedras.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/juego/Shuriken.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +53,8 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/braianaxeltroncoso/Escritorio/todoEscritorio/Spider"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/braianaxeltroncoso/Escritorio/todoEscritorio/SpiderGame"
   }
 }]]></component>
   <component name="RunManager">
@@ -82,9 +86,19 @@
       <option name="presentableId" value="Default" />
       <updated>1677728163716</updated>
     </task>
+    <task id="LOCAL-00001" summary="[ADD] Archivos terminados de Spider-Game">
+      <created>1677738349623</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677738349623</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="[ADD] Archivos terminados de Spider-Game" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] Archivos terminados de Spider-Game" />
   </component>
 </project>

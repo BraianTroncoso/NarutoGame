@@ -7,11 +7,12 @@ import java.awt.event.KeyListener;
 
 
 
+
 public class Juego extends JPanel {
 
     public static boolean haChocado=false;
-    Piedras roca = new Piedras(this);
-    Insecto bicho = new Insecto();
+    Shuriken roca = new Shuriken(this);
+    Naruto bicho = new Naruto();
     public Juego(){
         addKeyListener(new KeyListener() {
             @Override
@@ -36,13 +37,13 @@ public class Juego extends JPanel {
     public void paint(Graphics g){
         super.paint(g);
 
-        ImageIcon tela = new ImageIcon(getClass().getResource("../images/tela.png"));
+        ImageIcon tela = new ImageIcon(getClass().getResource("../images/aldea.png"));
         g.drawImage(tela.getImage(),0,0,getWidth(),getHeight(),this);
 
-        Font score = new Font("Arial",Font.BOLD,25);
+        Font score = new Font("Arial",Font.BOLD,30);
         g.setFont(score);
-        g.setColor(Color.blue);
-        g.drawString("PUNTAJE: "+roca.obtenerPuntos(),520,20);
+        g.setColor(Color.orange);
+        g.drawString("PUNTAJE: "+roca.obtenerPuntos(),520,25);
 
         bicho.paint(g);
 
@@ -53,7 +54,11 @@ public class Juego extends JPanel {
 
 
     public static void main(String[] args) {
-        JFrame miVentana = new JFrame("Running Spider");
+
+
+    /*    IconoTest icon = new IconoTest();*/
+
+        JFrame miVentana = new JFrame("NARUTO");
         Juego game = new Juego();
         miVentana.add(game);
         miVentana.setSize(700,700);
@@ -63,10 +68,11 @@ public class Juego extends JPanel {
         miVentana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         while (true){
-            if (haChocado | Piedras.nivel==5){
-                if(Piedras.nivel==5){JOptionPane.showMessageDialog(null,"Ganaste, Felicitaciones");}
-                    int reiniciaJuego=JOptionPane.showConfirmDialog(null,"Haz Perdido, " +
-                            "¿Quieres reiniciar el juego?","Perdiste!!!",JOptionPane.YES_NO_OPTION);
+            if (haChocado | Shuriken.nivel==5){
+                if(Shuriken.nivel==5){JOptionPane.showMessageDialog(null,"¡Ganaste, Dattebayo!");
+                    System.exit(0);}
+                    int reiniciaJuego=JOptionPane.showConfirmDialog(null,"Haz Perdido, ¡No te des de baja! " +
+                            "¿Quieres reiniciar el juego?","¡Perdiste!" ,JOptionPane.YES_NO_OPTION);
                     if (reiniciaJuego==0){
                         reiniciaValores();
                     } else if (reiniciaJuego==1) {
@@ -84,20 +90,20 @@ public class Juego extends JPanel {
     }
 
     public static void reiniciaValores(){
-        Piedras.xRoca1=600;
-        Piedras.yRoca1=700;
-        Piedras.xRoca2=700;
-        Piedras.yRoca2=100;
-        Piedras.xRoca3=-20;
-        Piedras.yRoca3=600;
-        Piedras.xRoca4=300;
-        Piedras.yRoca4=-20;
+        Shuriken.xRoca1=600;
+        Shuriken.yRoca1=700;
+        Shuriken.xRoca2=700;
+        Shuriken.yRoca2=100;
+        Shuriken.xRoca3=-20;
+        Shuriken.yRoca3=600;
+        Shuriken.xRoca4=300;
+        Shuriken.yRoca4=-20;
 
-        Insecto.x=10;
-        Insecto.y=10;
-        Piedras.nivel=1;
+        Naruto.x=10;
+        Naruto.y=10;
+        Shuriken.nivel=1;
         haChocado=false;
-        Piedras.puntos=0;
+        Shuriken.puntos=0;
 
 
 
