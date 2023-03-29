@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51f5fcd0-cd5e-44a1-b4e2-45d9d8565df2" name="Changes" comment="[ADD] Archivos terminados de Spider-Game">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/aldea.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/icon1.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/icon2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/naruto.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/portal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/shuriken.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/juego/IconoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/araña.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hoyo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/piedra.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/tela.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/juego/Insecto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/juego/Naruto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/juego/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/juego/Juego.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/juego/Piedras.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/juego/Shuriken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/juego/Naruto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/juego/Naruto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/juego/Shuriken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/juego/Shuriken.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,15 +36,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/braianaxeltroncoso/Escritorio/todoEscritorio/SpiderGame"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/braianaxeltroncoso/Escritorio/todoEscritorio/SpiderGame&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Juego" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="juego.Juego" />

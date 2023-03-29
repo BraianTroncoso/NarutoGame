@@ -12,7 +12,7 @@ public class Juego extends JPanel {
 
     public static boolean haChocado=false;
     Shuriken roca = new Shuriken(this);
-    Naruto bicho = new Naruto();
+    Naruto naruto = new Naruto();
     public Juego(){
         addKeyListener(new KeyListener() {
             @Override
@@ -22,7 +22,7 @@ public class Juego extends JPanel {
 
             @Override
             public void keyPressed(KeyEvent e) {
-                bicho.keyPressed(e);
+                naruto.keyPressed(e);
             }
 
             @Override
@@ -45,7 +45,7 @@ public class Juego extends JPanel {
         g.setColor(Color.orange);
         g.drawString("PUNTAJE: "+roca.obtenerPuntos(),520,25);
 
-        bicho.paint(g);
+        naruto.paint(g);
 
         roca.paint(g);
         roca.mover();

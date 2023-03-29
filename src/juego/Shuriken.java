@@ -5,6 +5,7 @@ import java.awt.geom.Area;
 import java.awt.geom.Ellipse2D;
 
 public class Shuriken {
+    //"Variables y configuración de inicio""
     public static int xRoca1=600,yRoca1=700;
     public static int xRoca2=700,yRoca2=100;
     public static int xRoca3=20,yRoca3=600;
@@ -27,6 +28,7 @@ public class Shuriken {
         this.j=j2;
     }
 
+    //"Dibujando objetos en una ventana gráfica"
     public void paint(Graphics g){
         ImageIcon shuriken = new ImageIcon(getClass().getResource("../images/shuriken.png"));
         if (nivel>=1){
@@ -42,20 +44,23 @@ public class Shuriken {
             g.drawImage(shuriken.getImage(),xRoca4,yRoca4,48,48,null);
         }
     }
+
+
+    //"Comprobación de colisión entre objetos
     public boolean choque(){
-        Area areaPersonaje = new Area(j.bicho.getBoundsBicho());
+        Area areaPersonaje = new Area(j.naruto.getBoundsNaruto());
         areaPersonaje.intersect(getBoundsPiedra());
         return !areaPersonaje.isEmpty();
     }
 
-
+    //"Actualización de movimiento y lógica del juego"
     public void mover(){
 
         if(choque()){
             j.haChocado=true;
         }
 
-        if(j.bicho.llegaFinal()){
+        if(j.naruto.llegaFinal()){
             nivel++;
             Naruto.x=10;
             Naruto.y=10;
@@ -101,7 +106,7 @@ public class Shuriken {
         }
     }
 
-
+//"Obtención de límites de áreas de rocas en juego y puntos de jugador"
     public int obtenerPuntos(){
         return puntos;
     }

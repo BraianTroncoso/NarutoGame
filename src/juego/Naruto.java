@@ -7,6 +7,8 @@ import java.awt.geom.Area;
 import java.awt.geom.Ellipse2D;
 
 public class Naruto {
+
+    //"Dibujando imágenes en una ventana gráfica con Java"
     public static int x= 10, y =10;
     public void paint(Graphics g){
         ImageIcon portal = new ImageIcon(getClass().getResource("../images/portal.png"));
@@ -16,6 +18,10 @@ public class Naruto {
         g.drawImage(naruto.getImage(),x,y, 100, 100, null);
     }
 
+
+
+
+    //"Control de teclas para mover un objeto en una ventana gráfica"
     public void keyPressed(KeyEvent e){
         if(e.getKeyCode()==37){
             if(x>0){
@@ -39,14 +45,18 @@ public class Naruto {
         }
 
     }
-    public Ellipse2D getBoundsBicho(){
+
+
+
+//"Cálculo de colisión en un juego con objetos geométricos"
+    public Ellipse2D getBoundsNaruto(){
         return new Ellipse2D.Double(x+10,y+30,80,50);
     }
 
     public boolean llegaFinal(){
         Rectangle cuadrado = new Rectangle(520,520,110,110);
         Area cuadradoArea=new Area(cuadrado);
-        return cuadradoArea.contains(getBoundsBicho().getBounds());
+        return cuadradoArea.contains(getBoundsNaruto().getBounds());
     }
 }
 /*
