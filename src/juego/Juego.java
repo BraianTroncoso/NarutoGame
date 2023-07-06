@@ -17,17 +17,13 @@ public class Juego extends JPanel {
         addKeyListener(new KeyListener() {
             @Override
             public void keyTyped(KeyEvent e) {
-
             }
-
             @Override
             public void keyPressed(KeyEvent e) {
                 naruto.keyPressed(e);
             }
-
             @Override
             public void keyReleased(KeyEvent e) {
-
             }
         });
         setFocusable(true);
@@ -46,16 +42,11 @@ public class Juego extends JPanel {
         g.drawString("PUNTAJE: "+roca.obtenerPuntos(),520,25);
 
         naruto.paint(g);
-
         roca.paint(g);
         roca.mover();
         g.dispose();
     }
-
-
     public static void main(String[] args) {
-
-
     /*    IconoTest icon = new IconoTest();*/
 
         JFrame miVentana = new JFrame("NARUTO");
@@ -77,9 +68,7 @@ public class Juego extends JPanel {
                         reiniciaValores();
                     } else if (reiniciaJuego==1) {
                         System.exit(0);
-
                     }
-
             }   try {
                 Thread.sleep(10);
             } catch (InterruptedException ex){
@@ -88,7 +77,6 @@ public class Juego extends JPanel {
             game.repaint();
         }
     }
-
     public static void reiniciaValores(){
         Shuriken.xRoca1=600;
         Shuriken.yRoca1=700;
@@ -104,11 +92,5 @@ public class Juego extends JPanel {
         Shuriken.nivel=1;
         haChocado=false;
         Shuriken.puntos=0;
-
-
-
-
-
     }
-
 }

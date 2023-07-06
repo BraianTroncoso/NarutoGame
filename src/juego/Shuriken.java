@@ -55,7 +55,6 @@ public class Shuriken {
 
     //"Actualización de movimiento y lógica del juego"
     public void mover(){
-
         if(choque()){
             j.haChocado=true;
         }
@@ -65,7 +64,6 @@ public class Shuriken {
             Naruto.x=10;
             Naruto.y=10;
         }
-
         if(nivel>=1){
             if(yRoca1==-20){
                 yRoca1=700;
@@ -75,7 +73,6 @@ public class Shuriken {
                 yRoca1=yRoca1-incremento;
             }
         }
-
         if(nivel>=2){
             if(xRoca2==-20){
                 xRoca2=700;
@@ -85,7 +82,6 @@ public class Shuriken {
                 xRoca2=xRoca2-incremento;
             }
         }
-
         if(nivel>=3){
             if(xRoca3==700){
                 xRoca3=-20;
@@ -105,7 +101,6 @@ public class Shuriken {
             }
         }
     }
-
 //"Obtención de límites de áreas de rocas en juego y puntos de jugador"
     public int obtenerPuntos(){
         return puntos;
@@ -117,25 +112,21 @@ public class Shuriken {
         r4= new Area(piedra4);
         rocaArea=r4;
 
-
         if(nivel>=1){
             piedra1= new Ellipse2D.Double(xRoca1,yRoca1,48,48);
             r1= new Area(piedra1);
             rocaArea.add(r1);
         }
-
         if(nivel>=2){
             piedra2= new Ellipse2D.Double(xRoca2,yRoca2,48,48);
             r2= new Area(piedra2);
             rocaArea.add(r2);
         }
-
         if(nivel>=3){
             piedra3= new Ellipse2D.Double(xRoca3,yRoca3,48,48);
             r3= new Area(piedra3);
             rocaArea.add(r3);
         }
-
         if(nivel>=4){
             piedra4= new Ellipse2D.Double(xRoca4,yRoca4,48,48);
             r4= new Area(piedra4);
