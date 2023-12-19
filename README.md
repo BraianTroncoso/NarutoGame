@@ -1,5 +1,6 @@
 # NarutoGame
-Juego realizado en JAVA usando el paradigma OOP
+Nuestro personaje "Naruto" tiene que evitar la mayor cantidad de shuriken por 4 niveles.
+Juego realizado en Java usando el paradigma OOP
 
 
 ![naruto_1](https://github.com/BraianTroncoso/NarutoGame/assets/95662710/3545f8b2-a498-42de-8db7-bb10014e92be)
