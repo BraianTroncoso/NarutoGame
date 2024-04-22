@@ -11,7 +11,7 @@ import java.awt.event.KeyListener;
 public class Juego extends JPanel {
 
     public static boolean haChocado=false;
-    Shuriken roca = new Shuriken(this);
+    Shuriken shuriken = new Shuriken(this);
     Naruto naruto = new Naruto();
     public Juego(){
         addKeyListener(new KeyListener() {
@@ -39,11 +39,11 @@ public class Juego extends JPanel {
         Font score = new Font("Arial",Font.BOLD,30);
         g.setFont(score);
         g.setColor(Color.orange);
-        g.drawString("PUNTAJE: "+roca.obtenerPuntos(),520,25);
+        g.drawString("PUNTAJE: "+ shuriken.obtenerPuntos(),520,25);
 
         naruto.paint(g);
-        roca.paint(g);
-        roca.mover();
+        shuriken.paint(g);
+        shuriken.mover();
         g.dispose();
     }
     public static void main(String[] args) {
@@ -78,14 +78,14 @@ public class Juego extends JPanel {
         }
     }
     public static void reiniciaValores(){
-        Shuriken.xRoca1=600;
-        Shuriken.yRoca1=700;
-        Shuriken.xRoca2=700;
-        Shuriken.yRoca2=100;
-        Shuriken.xRoca3=-20;
-        Shuriken.yRoca3=600;
-        Shuriken.xRoca4=300;
-        Shuriken.yRoca4=-20;
+        Shuriken.xShuriken1 =600;
+        Shuriken.yShuriken1 =700;
+        Shuriken.xShuriken2 =700;
+        Shuriken.yShuriken2 =100;
+        Shuriken.xShuriken3 =-20;
+        Shuriken.yShuriken3 =600;
+        Shuriken.xShuriken4 =300;
+        Shuriken.yShuriken4 =-20;
 
         Naruto.x=10;
         Naruto.y=10;

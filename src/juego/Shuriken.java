@@ -6,10 +6,10 @@ import java.awt.geom.Ellipse2D;
 
 public class Shuriken {
     //"Variables y configuración de inicio""
-    public static int xRoca1=600,yRoca1=700;
-    public static int xRoca2=700,yRoca2=100;
-    public static int xRoca3=20,yRoca3=600;
-    public static int xRoca4=300,yRoca4=20;
+    public static int xShuriken1 =600, yShuriken1 =700;
+    public static int xShuriken2 =700, yShuriken2 =100;
+    public static int xShuriken3 =20, yShuriken3 =600;
+    public static int xShuriken4 =300, yShuriken4 =20;
 
     public static int puntos = 0;
     public Juego j;
@@ -17,7 +17,7 @@ public class Shuriken {
     int incremento = 2;
 
 
-    Area r1,r2,r3,r4,rocaArea;
+    Area r1,r2,r3,r4, shurikenArea;
 
     int inicioY=0;
     int inicioX=0;
@@ -32,16 +32,16 @@ public class Shuriken {
     public void paint(Graphics g){
         ImageIcon shuriken = new ImageIcon(getClass().getResource("../images/shuriken.png"));
         if (nivel>=1){
-            g.drawImage(shuriken.getImage(),xRoca1,yRoca1,48,48,null);
+            g.drawImage(shuriken.getImage(), xShuriken1, yShuriken1,48,48,null);
         }
         if (nivel>=2){
-            g.drawImage(shuriken.getImage(),xRoca2,yRoca2,48,48,null);
+            g.drawImage(shuriken.getImage(), xShuriken2, yShuriken2,48,48,null);
         }
         if (nivel>=3){
-            g.drawImage(shuriken.getImage(),xRoca3,yRoca3,48,48,null);
+            g.drawImage(shuriken.getImage(), xShuriken3, yShuriken3,48,48,null);
         }
         if (nivel>=4){
-            g.drawImage(shuriken.getImage(),xRoca4,yRoca4,48,48,null);
+            g.drawImage(shuriken.getImage(), xShuriken4, yShuriken4,48,48,null);
         }
     }
 
@@ -65,73 +65,73 @@ public class Shuriken {
             Naruto.y=10;
         }
         if(nivel>=1){
-            if(yRoca1==-20){
-                yRoca1=700;
-                xRoca1=(int) (Math.random()*(finX-inicioX)+inicioX);
+            if(yShuriken1 ==-20){
+                yShuriken1 =700;
+                xShuriken1 =(int) (Math.random()*(finX-inicioX)+inicioX);
                 puntos++;
             }else {
-                yRoca1=yRoca1-incremento;
+                yShuriken1 = yShuriken1 -incremento;
             }
         }
         if(nivel>=2){
-            if(xRoca2==-20){
-                xRoca2=700;
-                yRoca2=(int) (Math.random()*(finY-inicioY)+inicioY);
+            if(xShuriken2 ==-20){
+                xShuriken2 =700;
+                yShuriken2 =(int) (Math.random()*(finY-inicioY)+inicioY);
                 puntos++;
             }else {
-                xRoca2=xRoca2-incremento;
+                xShuriken2 = xShuriken2 -incremento;
             }
         }
         if(nivel>=3){
-            if(xRoca3==700){
-                xRoca3=-20;
-                yRoca3=(int) (Math.random()*(finY-inicioY)+inicioY);
+            if(xShuriken3 ==700){
+                xShuriken3 =-20;
+                yShuriken3 =(int) (Math.random()*(finY-inicioY)+inicioY);
                 puntos++;
             }else {
-                xRoca3=xRoca3+incremento;
+                xShuriken3 = xShuriken3 +incremento;
             }
         }
         if(nivel>=4){
-            if(xRoca4==700){
-                yRoca4=-20;
-                xRoca4=(int) (Math.random()*(finX-inicioX)+inicioX);
+            if(xShuriken4 ==700){
+                yShuriken4 =-20;
+                xShuriken4 =(int) (Math.random()*(finX-inicioX)+inicioX);
                 puntos++;
             }else {
-                yRoca4=yRoca4+incremento;
+                yShuriken4 = yShuriken4 +incremento;
             }
         }
     }
-//"Obtención de límites de áreas de rocas en juego y puntos de jugador"
+//"Obtención de límites de áreas de shuriken en juego y puntos de jugador"
     public int obtenerPuntos(){
         return puntos;
     }
     public Area getBoundsPiedra(){
         Ellipse2D piedra1,piedra2,piedra3,piedra4;
 
-        piedra4 = new Ellipse2D.Double(xRoca1,yRoca1,48,48);
+        piedra4 = new Ellipse2D.Double(xShuriken1, yShuriken1,48,48);
         r4= new Area(piedra4);
-        rocaArea=r4;
+        shurikenArea =r4;
 
         if(nivel>=1){
-            piedra1= new Ellipse2D.Double(xRoca1,yRoca1,48,48);
+            piedra1= new Ellipse2D.Double(xShuriken1, yShuriken1,48,48);
             r1= new Area(piedra1);
-            rocaArea.add(r1);
+            shurikenArea.add(r1);
         }
         if(nivel>=2){
-            piedra2= new Ellipse2D.Double(xRoca2,yRoca2,48,48);
+            piedra2= new Ellipse2D.Double(xShuriken2, yShuriken2,48,48);
             r2= new Area(piedra2);
-            rocaArea.add(r2);
+            shurikenArea.add(r2);
         }
         if(nivel>=3){
-            piedra3= new Ellipse2D.Double(xRoca3,yRoca3,48,48);
+            piedra3= new Ellipse2D.Double(xShuriken3, yShuriken3,48,48);
             r3= new Area(piedra3);
-            rocaArea.add(r3);
+            shurikenArea.add(r3);
         }
         if(nivel>=4){
-            piedra4= new Ellipse2D.Double(xRoca4,yRoca4,48,48);
+            piedra4= new Ellipse2D.Double(xShuriken4, yShuriken4,48,48);
             r4= new Area(piedra4);
-            rocaArea.add(r4);
+            shurikenArea.add(r4);
         }
-        return rocaArea;
+        return shurikenArea;
     }
 }
